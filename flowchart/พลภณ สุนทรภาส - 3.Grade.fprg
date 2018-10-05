@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="NBP"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2561-10-03 12:33:30 PM"/>
+        <attribute name="created" value="TkJQO05CUC0yMDsyNTYxLTEwLTAzOzEyOjEwOjIyIFBNOzE4NjE="/>
+        <attribute name="edited" value="TkJQO05CUC0yMDsyNTYxLTEwLTAzOzEyOjMyOjI2IFBNOzE7TkJQO05CUC0yMDsyNTYxLTEwLTAzOzEyOjEwOjIyIFBNOzEuQ3lsaW5kZXIgVm9sdW1lLmZwcmc7NjAxOA=="/>
+        <attribute name="edited" value="TkJQO05CUC0yMDsyNTYxLTEwLTAzOzEyOjMzOjMwIFBNOzE2OzIwMjc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="score" type="Real" array="False" size=""/>
+            <declare name="grade" type="String" array="False" size=""/>
+            <output expression="&quot;Please enter score&quot;" newline="True"/>
+            <input variable="score"/>
+            <comment text="A = 80 and more&#13;&#10;B = 70 - 79&#13;&#10;C = 60 - 69&#13;&#10;D = 50 - 59&#13;&#10;F = 49 and below"/>
+            <if expression="score &gt;= 80">
+                <then>
+                    <assign variable="grade" expression="&quot;A&quot;"/>
+                </then>
+                <else>
+                    <if expression="score &gt;= 70">
+                        <then>
+                            <assign variable="grade" expression="&quot;B&quot;"/>
+                        </then>
+                        <else>
+                            <if expression="score &gt;= 60">
+                                <then>
+                                    <assign variable="grade" expression="&quot;C&quot;"/>
+                                </then>
+                                <else>
+                                    <if expression="score &gt;= 50">
+                                        <then>
+                                            <assign variable="grade" expression="&quot;D&quot;"/>
+                                        </then>
+                                        <else>
+                                            <assign variable="grade" expression="&quot;F&quot;"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;This score is grade &quot; &amp; grade" newline="True"/>
+            <output expression="&quot;Coded by &#3614;&#3621;&#3616;&#3603; &#3626;&#3640;&#3609;&#3607;&#3619;&#3616;&#3634;&#3626;&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

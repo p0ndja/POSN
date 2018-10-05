@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="NBP"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2561-10-03 12:24:42 PM"/>
+        <attribute name="created" value="TkJQO05CUC0yMDsyNTYxLTEwLTAzOzEyOjEwOjIyIFBNOzE4NjE="/>
+        <attribute name="edited" value="TkJQO05CUC0yMDsyNTYxLTEwLTAzOzEyOjI0OjQyIFBNOzEwOzIwMjQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="baseLength, height, area" type="Real" array="False" size=""/>
+            <output expression="&quot;Please enter triangle's height&quot;" newline="True"/>
+            <input variable="height"/>
+            <output expression="&quot;Please enter triangle's base length&quot;" newline="False"/>
+            <input variable="baseLength"/>
+            <assign variable="area" expression="(1/2) * baseLength * height"/>
+            <comment text="&#3614;&#3639;&#3657;&#3609;&#3607;&#3637;&#3656;&#3626;&#3634;&#3617;&#3648;&#3627;&#3621;&#3637;&#3656;&#3618;&#3617;&#13;&#10;= (1/2) * &#3600;&#3634;&#3609;[baseLength] * &#3626;&#3641;&#3591;[Height]"/>
+            <output expression="&quot;Triangle volume is &quot; &amp; area" newline="True"/>
+            <output expression="&quot;Coded by &#3614;&#3621;&#3616;&#3603; &#3626;&#3640;&#3609;&#3607;&#3619;&#3616;&#3634;&#3626;&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

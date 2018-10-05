@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="NBP"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2561-10-03 12:42:35 PM"/>
+        <attribute name="created" value="TkJQO05CUC0yMDsyNTYxLTEwLTAzOzEyOjM2OjA0IFBNOzE4Njk="/>
+        <attribute name="edited" value="TkJQO05CUC0yMDsyNTYxLTEwLTAzOzEyOjQyOjM1IFBNOzc7MTk4NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, sum" type="Real" array="False" size=""/>
+            <output expression="&quot;Please input the 1st integer:&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Please input the 2nd integer:&quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;Please input the 3rd integer:&quot;" newline="True"/>
+            <input variable="c"/>
+            <assign variable="sum" expression="a+b+c"/>
+            <output expression="&quot;The summary of &quot; &amp; a &amp; &quot;+&quot; &amp; b &amp; &quot;+&quot; &amp; c &amp; &quot; is &quot; &amp; sum" newline="True"/>
+            <output expression="&quot;Coded by &#3614;&#3621;&#3616;&#3603; &#3626;&#3640;&#3609;&#3607;&#3619;&#3616;&#3634;&#3626;&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

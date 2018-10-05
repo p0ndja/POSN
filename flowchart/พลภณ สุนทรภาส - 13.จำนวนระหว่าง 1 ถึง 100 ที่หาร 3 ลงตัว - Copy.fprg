@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="NBP"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2561-10-03 02:34:23 PM"/>
+        <attribute name="created" value="TkJQO05CUC0yMDsyNTYxLTEwLTAzOzAyOjExOjU4IFBNOzE4NzA="/>
+        <attribute name="edited" value="TkJQO05CUC0yMDsyNTYxLTEwLTAzOzAyOjM0OjIzIFBNOzk7MTk4Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="startInt, endInt" type="Integer" array="False" size=""/>
+            <assign variable="startInt" expression="1"/>
+            <assign variable="endInt" expression="100"/>
+            <output expression="&quot;&#3648;&#3619;&#3636;&#3656;&#3617;&#3607;&#3637;&#3656; &quot; &amp; startInt &amp; &quot; &#3592;&#3610;&#3607;&#3637;&#3656; &quot; &amp; endInt" newline="True"/>
+            <output expression="&quot;&#3592;&#3635;&#3609;&#3623;&#3609;&#3607;&#3637;&#3656;&#3627;&#3634;&#3619;&#3604;&#3657;&#3623;&#3618; 3 &#3621;&#3591;&#3605;&#3633;&#3623;&#3652;&#3604;&#3657;&#3649;&#3585;&#3656;: &quot;" newline="True"/>
+            <while expression="startInt &lt;= endInt">
+                <if expression="(startInt % 3) = 0">
+                    <then>
+                        <output expression="startInt" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="startInt" expression="startInt+1"/>
+            </while>
+            <output expression="&quot;Coded by &#3614;&#3621;&#3616;&#3603; &#3626;&#3640;&#3609;&#3607;&#3619;&#3616;&#3634;&#3626;&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

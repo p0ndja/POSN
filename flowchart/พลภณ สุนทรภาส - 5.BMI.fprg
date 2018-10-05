@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="NBP"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2561-10-03 01:23:47 PM"/>
+        <attribute name="created" value="TkJQO05CUC0yMDsyNTYxLTEwLTAzOzEyOjU0OjQyIFBNOzE4NzE="/>
+        <attribute name="edited" value="TkJQO05CUC0yMDsyNTYxLTEwLTAzOzAxOjIzOjQ3IFBNOzM0OzIwMzI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="height, weight, bmi" type="Real" array="False" size=""/>
+            <declare name="healthResult" type="String" array="False" size=""/>
+            <output expression="&quot;&gt;&gt;Please enter user's height (in meter)&lt;&lt;&quot;" newline="True"/>
+            <input variable="height"/>
+            <if expression="height &gt; 3">
+                <then>
+                    <assign variable="height" expression="height / 100"/>
+                    <output expression="&quot;You're forgotten to change your height unit!&quot;" newline="True"/>
+                    <output expression="&quot;But don't worry, I changed it to: &quot; &amp; height &amp; &quot; metre.&quot;" newline="True"/>
+                    <output expression="&quot;Feel free to happy now. :)&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="&quot;&gt;&gt;Please enter user's weight&lt;&lt;&quot;" newline="True"/>
+            <input variable="weight"/>
+            <assign variable="bmi" expression="weight/(height*height)"/>
+            <output expression="&quot;Your BMI is &quot; &amp; bmi" newline="True"/>
+            <if expression="bmi &gt;= 30">
+                <then>
+                    <output expression="&quot;&#3588;&#3640;&#3603;&#3629;&#3657;&#3623;&#3609;&#3617;&#3634;&#3585;&#3648;&#3585;&#3636;&#3609;&#3652;&#3611;&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="bmi &gt;= 25 &amp;&amp; bmi &lt; 30">
+                        <then>
+                            <output expression="&quot;&#3588;&#3640;&#3603;&#3648;&#3619;&#3636;&#3656;&#3617;&#3629;&#3657;&#3623;&#3609;&#3651;&#3609;&#3619;&#3632;&#3604;&#3633;&#3610;&#3627;&#3609;&#3638;&#3656;&#3591;&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="bmi &gt;= 23 &amp;&amp; bmi &lt; 25">
+                                <then>
+                                    <output expression="&quot;&#3588;&#3640;&#3603;&#3617;&#3637;&#3609;&#3657;&#3635;&#3627;&#3609;&#3633;&#3585;&#3648;&#3585;&#3636;&#3609;&#3585;&#3623;&#3656;&#3634;&#3648;&#3585;&#3603;&#3601;&#3660;&#3611;&#3585;&#3605;&#3636;&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="bmi &gt;= 18.6 &amp;&amp; bmi &lt; 23">
+                                        <then>
+                                            <output expression="&quot;&#3588;&#3640;&#3603;&#3617;&#3637;&#3609;&#3657;&#3635;&#3627;&#3609;&#3633;&#3585;&#3629;&#3618;&#3641;&#3656;&#3651;&#3609;&#3648;&#3585;&#3603;&#3601;&#3660;&#3611;&#3585;&#3605;&#3636; &#3648;&#3627;&#3617;&#3634;&#3632;&#3626;&#3617;&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;&#3588;&#3640;&#3603;&#3617;&#3637;&#3609;&#3657;&#3635;&#3627;&#3609;&#3633;&#3585;&#3605;&#3656;&#3635;&#3585;&#3623;&#3656;&#3634;&#3648;&#3585;&#3603;&#3601;&#3660;&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;&#3586;&#3657;&#3629;&#3617;&#3641;&#3621;&#3592;&#3634;&#3585; honestdoctor.co&quot;" newline="True"/>
+            <output expression="&quot;Coded by &#3614;&#3621;&#3616;&#3603; &#3626;&#3640;&#3609;&#3607;&#3619;&#3616;&#3634;&#3626;&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

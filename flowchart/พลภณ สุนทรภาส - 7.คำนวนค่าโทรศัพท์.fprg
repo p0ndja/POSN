@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="NBP"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2561-10-03 01:37:18 PM"/>
+        <attribute name="created" value="TkJQO05CUC0yMDsyNTYxLTEwLTAzOzAxOjMwOjM1IFBNOzE4NjU="/>
+        <attribute name="edited" value="TkJQO05CUC0yMDsyNTYxLTEwLTAzOzAxOjM3OjE4IFBNOzMxOzIwMzI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="minute, balance" type="Real" array="False" size=""/>
+            <output expression="&quot;&#3585;&#3619;&#3640;&#3603;&#3634;&#3651;&#3626;&#3656;&#3618;&#3629;&#3604;&#3592;&#3635;&#3609;&#3623;&#3609;&#3609;&#3634;&#3607;&#3637;&#3607;&#3637;&#3656;&#3650;&#3607;&#3619; (&#3609;&#3634;&#3607;&#3637;)&quot;" newline="True"/>
+            <input variable="minute"/>
+            <if expression="minute &gt; 600">
+                <then>
+                    <assign variable="balance" expression="((minute - 600) * 1.5) + 300"/>
+                </then>
+                <else>
+                    <output expression="&quot;&#3588;&#3640;&#3603;&#3617;&#3637;&#3626;&#3636;&#3607;&#3608;&#3636;&#3660;&#3650;&#3607;&#3619;&#3615;&#3619;&#3637; 600 &#3609;&#3634;&#3607;&#3637;&#3605;&#3656;&#3629;&#3648;&#3604;&#3639;&#3629;&#3609;&#3592;&#3656;&#3634;&#3618;&#3648;&#3614;&#3637;&#3618;&#3591; 300 &#3610;&#3634;&#3607;&quot;" newline="True"/>
+                    <output expression="&quot;&#3648;&#3609;&#3639;&#3656;&#3629;&#3591;&#3592;&#3634;&#3585;&#3588;&#3640;&#3603;&#3651;&#3594;&#3657;&#3652;&#3617;&#3656;&#3606;&#3638;&#3591; 600 &#3609;&#3634;&#3607;&#3637;&quot;" newline="True"/>
+                    <assign variable="balance" expression="300"/>
+                </else>
+            </if>
+            <output expression="&quot;&#3588;&#3640;&#3603;&#3617;&#3637;&#3618;&#3629;&#3604;&#3588;&#3656;&#3634;&#3650;&#3607;&#3619;&#3588;&#3657;&#3634;&#3591;&#3594;&#3635;&#3619;&#3632; &quot; &amp; balance &amp; &quot; &#3610;&#3634;&#3607;&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
