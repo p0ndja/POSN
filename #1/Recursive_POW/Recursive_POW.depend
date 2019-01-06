@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1539239692 source:c:\users\admin\desktop\posn\recursive_pow\main.c
+	<stdio.h>
+	<stdlib.h>
+

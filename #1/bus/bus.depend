@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1538791804 source:c:\users\admin\desktop\posn\bus\main.c
+	<stdio.h>
+	<stdlib.h>
+

@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1538745455 source:c:\users\admin\desktop\posn\christmas\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1538745455 source:d:\posn\christmas\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1538745455 source:d:\posn\#1\source\christmas\main.c
+	<stdio.h>
+	<stdlib.h>
+

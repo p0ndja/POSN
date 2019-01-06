@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1538812287 source:c:\users\admin\desktop\posn\lcm\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+

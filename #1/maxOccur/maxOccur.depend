@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1539180908 source:c:\users\admin\desktop\posn\maxoccur\main.c
+	<stdio.h>
+	<stdlib.h>
+

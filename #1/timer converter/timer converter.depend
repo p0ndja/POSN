@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1538896907 source:c:\users\admin\desktop\posn\timer converter\main.c
+	<stdio.h>
+	<stdlib.h>
+

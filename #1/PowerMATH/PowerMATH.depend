@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1539229326 source:c:\users\admin\desktop\posn\powermath\main.c
+	<stdio.h>
+	<math.h>
+

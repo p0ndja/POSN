@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1539177286 source:c:\users\admin\desktop\posn\queue\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string.h>
+

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1538792175 source:c:\users\admin\desktop\posn\areabox\main.c
+	<stdio.h>
+	<stdlib.h>
+

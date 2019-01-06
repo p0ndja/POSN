@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1539237706 source:c:\users\admin\desktop\posn\recursive_fibo\main.c
+	<stdio.h>
+	<stdlib.h>
+
