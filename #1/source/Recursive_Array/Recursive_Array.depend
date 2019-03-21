@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1539242363 source:c:\users\admin\desktop\posn\recursive_array\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1539242363 source:d:\posn\#1\source\recursive_array\main.c
+	<stdio.h>
+	<stdlib.h>
+

@@ -1,0 +1,43 @@
+//Quick Sort
+data[] --> Array
+n --> Count for arrange
+qsort(data, n, sizeof(data[0]), compare);
+
+int compare(const void *a, const void *b) {
+	const int *aa = (const int*) a;
+	const int *bb = (const int*) b;
+	return *aa-*bb
+}
+
+//จับเวลา
+#include <time.h>
+clock_t a = clock();
+clock_t b = clock();
+double time_spend = (double) (b-a) / CLOCKS_PER_SEC;
+printf("\nTIME: %.5f", time_spend);
+
+//Binary Search
+int key =...
+int A[] =...
+int BinarySearch(int LI, int HI) { //LI,HI is index
+	if (LI > HI) return -1; //Key not found
+	if (key == A[(LI+HI)/2]) return (LI+HI)/2;
+	else if (key < A[(LI+HI)/2]) BinarySearch(LI, ((LI+HI)/2) - 1);
+	else BinarySearch(((LI+HI)/2) + 1, HI);
+}
+
+//Compare Function
+#include<stdio.h>
+int cmpfuncA (const void * a, const void * b) {
+   return ( *(int*)a - *(int*)b );
+}
+int cmpfuncB (const void * a, const void * b) {
+   return ( *(int*)b - *(int*)a );
+}
+
+//New C++ Function
+vector<int>
+set<int>
+multiset<int>
+map<int,int> --> Hash
+multimap<int,int>

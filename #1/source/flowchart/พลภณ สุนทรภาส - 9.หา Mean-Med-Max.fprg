@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="NBP"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2561-10-03 02:24:47 PM"/>
+        <attribute name="created" value="TkJQO05CUC0yMDsyNTYxLTEwLTAzOzAxOjUwOjQwIFBNOzE4NjM="/>
+        <attribute name="edited" value="TkJQO05CUC0yMDsyNTYxLTEwLTAzOzAyOjI0OjQ3IFBNOzU1OzIwMzc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, mean, max, med, min, mid" type="Real" array="False" size=""/>
+            <declare name="mode" type="String" array="False" size=""/>
+            <output expression="&quot;&#3585;&#3619;&#3640;&#3603;&#3634;&#3651;&#3626;&#3656;&#3588;&#3656;&#3634;&#3605;&#3633;&#3623;&#3649;&#3611;&#3619;&#3607;&#3637;&#3656; 1: &quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;&#3585;&#3619;&#3640;&#3603;&#3634;&#3651;&#3626;&#3656;&#3588;&#3656;&#3634;&#3605;&#3633;&#3623;&#3649;&#3611;&#3619;&#3607;&#3637;&#3656; 2: &quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;&#3585;&#3619;&#3640;&#3603;&#3634;&#3651;&#3626;&#3656;&#3588;&#3656;&#3634;&#3605;&#3633;&#3623;&#3649;&#3611;&#3619;&#3607;&#3637;&#3656; 3: &quot;" newline="True"/>
+            <input variable="c"/>
+            <output expression="&quot;&#3588;&#3640;&#3603;&#3605;&#3657;&#3629;&#3591;&#3585;&#3634;&#3619;&#3592;&#3632;&#3627;&#3634;&#3588;&#3656;&#3634;&#3629;&#3632;&#3652;&#3619;?&quot;" newline="True"/>
+            <output expression="&quot;&#3585;&#3619;&#3640;&#3603;&#3634;&#3605;&#3629;&#3610;&#3604;&#3657;&#3623;&#3618;&#3588;&#3635;&#3605;&#3629;&#3610;&#3604;&#3657;&#3634;&#3609;&#3621;&#3656;&#3634;&#3591;&quot;" newline="True"/>
+            <output expression="&quot; - '1' &#3626;&#3635;&#3627;&#3619;&#3633;&#3610;&#3588;&#3656;&#3634;&#3648;&#3593;&#3621;&#3637;&#3656;&#3618;&#3648;&#3621;&#3586;&#3588;&#3603;&#3636;&#3605; &#3627;&#3619;&#3639;&#3629;&#3614;&#3636;&#3617;&#3614;&#3660; 'Mean' &#3627;&#3619;&#3639;&#3629; 'M'&quot;" newline="True"/>
+            <output expression="&quot; - '2' &#3626;&#3635;&#3627;&#3619;&#3633;&#3610;&#3588;&#3656;&#3634;&#3617;&#3633;&#3608;&#3618;&#3600;&#3634;&#3609; &#3627;&#3619;&#3639;&#3629;&#3614;&#3636;&#3617;&#3614;&#3660; 'Median' &#3627;&#3619;&#3639;&#3629; 'Med'&quot;" newline="True"/>
+            <output expression="&quot; - '3' &#3626;&#3635;&#3627;&#3619;&#3633;&#3610;&#3588;&#3656;&#3634;&#3617;&#3634;&#3585;&#3607;&#3637;&#3656;&#3626;&#3640;&#3604; &#3627;&#3619;&#3639;&#3629;&#3614;&#3636;&#3617;&#3614;&#3660; 'Maximum' &#3627;&#3619;&#3639;&#3629; 'Max'&quot;" newline="True"/>
+            <input variable="mode"/>
+            <if expression="mode = &quot;1&quot; || mode = &quot;Mean&quot; || mode = &quot;M&quot;">
+                <then>
+                    <assign variable="mean" expression="(a+b+c)/3"/>
+                    <output expression="&quot;&#3588;&#3656;&#3634;&#3648;&#3593;&#3621;&#3637;&#3656;&#3618;&#3648;&#3621;&#3586;&#3588;&#3603;&#3636;&#3605;&#3586;&#3629;&#3591;&#3592;&#3635;&#3609;&#3623;&#3609;&#3607;&#3637;&#3656;&#3619;&#3632;&#3610;&#3640;&#3588;&#3639;&#3629; &quot; &amp; mean" newline="True"/>
+                </then>
+                <else>
+                    <comment text="&#3627;&#3634;&#3588;&#3656;&#3634;&#3609;&#3657;&#3629;&#3618; - &#3617;&#3634;&#3585;&#3607;&#3637;&#3656;&#3626;&#3640;&#3604;"/>
+                    <if expression="a &gt; b">
+                        <then>
+                            <assign variable="max" expression="a"/>
+                            <assign variable="min" expression="b"/>
+                        </then>
+                        <else>
+                            <assign variable="max" expression="b"/>
+                            <assign variable="min" expression="a"/>
+                        </else>
+                    </if>
+                    <if expression="max &gt; c">
+                        <then>
+                            <if expression="max = a">
+                                <then>
+                                    <if expression="b &gt; c">
+                                        <then>
+                                            <assign variable="min" expression="c"/>
+                                            <assign variable="mid" expression="b"/>
+                                        </then>
+                                        <else>
+                                            <assign variable="min" expression="b"/>
+                                            <assign variable="mid" expression="c"/>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <if expression="a &gt; c">
+                                        <then>
+                                            <assign variable="min" expression="c"/>
+                                            <assign variable="mid" expression="a"/>
+                                        </then>
+                                        <else>
+                                            <assign variable="min" expression="a"/>
+                                            <assign variable="mid" expression="c"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <assign variable="max" expression="c"/>
+                            <if expression="a &gt; b">
+                                <then>
+                                    <assign variable="min" expression="b"/>
+                                    <assign variable="mid" expression="a"/>
+                                </then>
+                                <else>
+                                    <assign variable="min" expression="a"/>
+                                    <assign variable="mid" expression="b"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                    <if expression="mode = &quot;2&quot; || mode = &quot;Median&quot; || mode = &quot;Med&quot;">
+                        <then>
+                            <assign variable="med" expression="mid"/>
+                            <output expression="&quot;&#3588;&#3656;&#3634;&#3617;&#3633;&#3608;&#3618;&#3600;&#3634;&#3609;&#3586;&#3629;&#3591;&#3592;&#3635;&#3609;&#3623;&#3609;&#3607;&#3637;&#3656;&#3619;&#3632;&#3610;&#3640;&#3588;&#3639;&#3629; &quot; &amp; med" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;&#3592;&#3635;&#3609;&#3623;&#3609;&#3607;&#3637;&#3656;&#3617;&#3634;&#3585;&#3607;&#3637;&#3656;&#3626;&#3640;&#3604;&#3586;&#3629;&#3591;&#3592;&#3635;&#3609;&#3623;&#3609;&#3607;&#3637;&#3656;&#3619;&#3632;&#3610;&#3640;&#3588;&#3639;&#3629; &quot; &amp; max" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Coded by &#3614;&#3621;&#3616;&#3603; &#3626;&#3640;&#3609;&#3607;&#3619;&#3616;&#3634;&#3626;&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1538973912 source:c:\users\admin\desktop\posn\arrayrearangenumber\main.c
+	<stdio.h>
+	<stdlib.h>
+

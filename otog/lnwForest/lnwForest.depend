@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1552315843 source:d:\posn\otog\lnwforest\main.cpp
+	<iostream>
+	<limits.h>
+	<stdio.h>
+	<stdlib.h>
+

@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1552141166 source:d:\posn\#2\day1\c++\bonus\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
+1552317012 source:d:\posn\#2\contest1\bonus\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<limits.h>
+

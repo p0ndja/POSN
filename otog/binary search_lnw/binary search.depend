@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1552200371 source:d:\posn\otog\binary search\main.c
+	<stdio.h>
+	<stdlib.h>
+	<limits.h>
+
+1552450003 source:d:\posn\otog\binary search_lnw\main.c
+	<stdio.h>
+	<stdlib.h>
+	<limits.h>
+

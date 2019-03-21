@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1539140789 source:c:\users\admin\desktop\posn\array2d_2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

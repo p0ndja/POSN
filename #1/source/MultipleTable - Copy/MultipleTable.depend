@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1538636682 source:c:\users\admin\desktop\posn\multipletable - copy\multiple.c
+	<stdio.h>
+	<stdlib.h>
+

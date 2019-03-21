@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1552107215 source:d:\posn\otog\fruit fruit fruit\main.c
+	<stdio.h>
+
+1552054228 source:d:\posn\otog\fruit fruit fruit\src\test.cpp
+	"test.h"
+
+1552054228 d:\posn\otog\fruit fruit fruit\include\test.h
+
+1552054525 source:d:\posn\otog\fruit fruit fruit\test.c
+	<stdio.h>
+

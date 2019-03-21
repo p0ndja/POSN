@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1538641059 source:c:\users\admin\desktop\posn\calendarcalculator\main.c
+	<stdio.h>
+	<stdlib.h>
+

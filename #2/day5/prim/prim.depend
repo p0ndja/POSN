@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1552456067 source:d:\posn\#2\day5\prim\main.cpp
+	<iostream>
+	<stdio.h>
+	<conio.h>
+

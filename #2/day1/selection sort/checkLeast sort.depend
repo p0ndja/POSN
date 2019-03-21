@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1552105944 source:d:\posn\#2\day1\checkleast sort\main.c
+	<stdio.h>
+	<stdlib.h>
+	<limits.h>
+

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1552285351 source:d:\posn\#2\day3\order tree\main.cpp
+	<iostream>
+	<stdio.h>
+	<math.h>
+

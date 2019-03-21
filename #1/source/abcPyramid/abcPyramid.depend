@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1539160871 source:c:\users\admin\desktop\posn\abcpyramid\main.c
+	<stdio.h>
+	<stdlib.h>
+

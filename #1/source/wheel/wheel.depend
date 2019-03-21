@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1539066743 source:c:\users\admin\desktop\posn\wheel\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

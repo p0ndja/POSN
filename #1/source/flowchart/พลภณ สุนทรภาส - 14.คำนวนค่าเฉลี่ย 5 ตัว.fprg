@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="NBP"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2561-10-03 02:36:20 PM"/>
+        <attribute name="created" value="TkJQO05CUC0yMDsyNTYxLTEwLTAzOzAxOjUwOjQwIFBNOzE4NjM="/>
+        <attribute name="edited" value="TkJQO05CUC0yMDsyNTYxLTEwLTAzOzAyOjM2OjIwIFBNOzU4OzIwMzQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, d, e, mean" type="Real" array="False" size=""/>
+            <declare name="mode" type="String" array="False" size=""/>
+            <output expression="&quot;&#3585;&#3619;&#3640;&#3603;&#3634;&#3651;&#3626;&#3656;&#3588;&#3656;&#3634;&#3605;&#3633;&#3623;&#3649;&#3611;&#3619;&#3607;&#3637;&#3656; 1: &quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;&#3585;&#3619;&#3640;&#3603;&#3634;&#3651;&#3626;&#3656;&#3588;&#3656;&#3634;&#3605;&#3633;&#3623;&#3649;&#3611;&#3619;&#3607;&#3637;&#3656; 2: &quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;&#3585;&#3619;&#3640;&#3603;&#3634;&#3651;&#3626;&#3656;&#3588;&#3656;&#3634;&#3605;&#3633;&#3623;&#3649;&#3611;&#3619;&#3607;&#3637;&#3656; 3: &quot;" newline="True"/>
+            <input variable="c"/>
+            <output expression="&quot;&#3585;&#3619;&#3640;&#3603;&#3634;&#3651;&#3626;&#3656;&#3588;&#3656;&#3634;&#3605;&#3633;&#3623;&#3649;&#3611;&#3619;&#3607;&#3637;&#3656; 4: &quot;" newline="True"/>
+            <input variable="d"/>
+            <output expression="&quot;&#3585;&#3619;&#3640;&#3603;&#3634;&#3651;&#3626;&#3656;&#3588;&#3656;&#3634;&#3605;&#3633;&#3623;&#3649;&#3611;&#3619;&#3607;&#3637;&#3656; 5: &quot;" newline="True"/>
+            <input variable="e"/>
+            <assign variable="mean" expression="(a+b+c+d+e) / 5"/>
+            <output expression="&quot;&#3588;&#3656;&#3634;&#3648;&#3593;&#3621;&#3637;&#3656;&#3618;&#3648;&#3621;&#3586;&#3588;&#3603;&#3636;&#3605;&#3648;&#3607;&#3656;&#3634;&#3585;&#3633;&#3610; &quot; &amp; mean" newline="True"/>
+            <output expression="&quot;Coded by &#3614;&#3621;&#3616;&#3603; &#3626;&#3640;&#3609;&#3607;&#3619;&#3616;&#3634;&#3626;&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

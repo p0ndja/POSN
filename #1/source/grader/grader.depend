@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1544095994 source:d:\posn\grader\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

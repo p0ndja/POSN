@@ -1,0 +1,192 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+struct lineStruct{
+    int start;
+    int end;
+    int weight;
+};
+
+lineStruct line[100];
+int adj[100][100];
+bool visited[100];
+
+bool compare(lineStruct a, lineStruct b) {
+    if (a.start == b.start) return a.end < b.end;
+    return a.start < b.start;
+}
+
+int main()
+{
+    int node, lineCase, startPoint;
+
+    int OrZ = 0;
+
+    scanf("%d %d %d", &node, &lineCase, &startPoint); startPoint -= OrZ;
+
+    for (int i = 0; i < lineCase; i++) {
+        int weight;
+        scanf("%d %d %d", &line[i].start, &line[i].end, &line[i].weight);
+        adj[line[i].start - OrZ][line[i].end - OrZ] = line[i].weight;
+    }
+
+    sort(line, line + lineCase, compare);
+    queue<int> q;
+
+    q.push(startPoint);
+    visited[startPoint] = true;
+
+    printf("---------------\n%d ",startPoint);
+    while(!q.empty()) {
+        int top = q.front(); q.pop();
+        for (int i = OrZ; i < node; i++){
+
+            if (adj[top][i] != 0 && visited[i] == false) {
+                q.push(i);
+                visited[i] = true;
+                printf("%d(%d) ", i, adj[top][i]);
+            }
+        }
+    }
+}
+
+
+9 8
+3
+4 8
+1 4
+2 6
+3 7
+4 9
+1 2
+2 5
+1 3
+
+9 8
+1 5
+4 8
+1 4
+2 6
+3 7
+4 9
+1 2
+2 5
+1 3
+
+7 12 2 7
+1 2
+1 3
+1 4
+2 3
+2 5
+2 6
+3 4
+3 5
+4 5
+5 6
+5 7
+6 7
+
+-----------------Adjacent Matrix Sol #pannxe-------------------
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int Graph[100][100];
+bool visited[100];
+
+int main(){
+    int n, m, src, des;
+    cin >> n >> m >> src >> des;
+
+    for(int i=0, u, v; i<m; i++) {
+        cin >> u >> v;
+        Graph[u][v] = Graph[v][u] = 1;
+    }
+
+    queue<pair<int, int>> que;
+
+    que.push(make_pair(src,0));
+    visited[src] = true;
+
+    while(!que.empty()) {
+        int this_node = que.front().first,
+            this_dist = que.front().second;
+
+        if(this_node == des) {
+            cout << "Shortest distance = " << this_dist;
+            return 0;
+        }
+
+        for(int i=1; i<=n; i++) {
+            if(Graph[this_node][i] == 1 && visited[i] == false) {
+                que.push(make_pair(i, this_dist+1));
+                visited[i] = true;
+            }
+        }
+        que.pop();
+    }
+    cout << "Cannot travel to such destination";
+    return 0;
+}
+
+-----------------------My way Adjacent ---------------------
+#include <bits/stdc++.h>
+
+using namespace std;
+
+struct lineStruct{
+    int start;
+    int end;
+    int weight;
+};
+
+lineStruct line[100];
+int adj[100][100];
+bool visited[100];
+
+bool compare(lineStruct a, lineStruct b) {
+    if (a.start == b.start) return a.end < b.end;
+    return a.start < b.start;
+}
+
+int main()
+{
+    int node, lineCase, startPoint, endPoint;
+
+    scanf("%d %d %d %d", &node, &lineCase, &startPoint, &endPoint);
+
+    for (int i = 0; i < lineCase; i++) {
+        int weight;
+        scanf("%d %d", &line[i].start, &line[i].end);
+        adj[line[i].start][line[i].end ] = 1;
+    }
+
+    sort(line, line + lineCase, compare);
+    queue<pair<int,int>> q;
+
+    q.push(make_pair(startPoint,0));
+    visited[startPoint] = true;
+
+    printf("---------------\n");
+    while(!q.empty()) {
+        int this_node = q.front().first, this_dist = q.front().second;
+        if (this_node == endPoint) {
+          cout << "Shortest: " << this_dist;
+          return 0;
+        }
+
+        for (int i = 1; i <= node; i++){
+            if (adj[this_node][i] != 0 && visited[i] == false) {
+                q.push(make_pair(i,this_dist + 1));
+                visited[i] = true;
+                //printf("%d(%d) ", i, adj[top][i]);
+            }
+        }
+        q.pop();
+    }
+    cout << "NULL";
+    return 0;
+}
+----------------------------------------------------------------

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1552122091 source:d:\posn\otog\sort_5\main.c
+	<stdio.h>
+	<stdlib.h>
+

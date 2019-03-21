@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1550728339 source:d:\posn\school\sonic\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

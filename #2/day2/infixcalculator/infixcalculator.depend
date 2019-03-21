@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1552211608 source:d:\posn\#2\day2\infixcalculator\main.cpp
+	<stdio.h>
+	<conio.h>
+

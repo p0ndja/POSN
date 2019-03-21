@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1539154711 source:c:\users\admin\desktop\posn\location\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1552621100 source:d:\posn\#1\source\location\main.c
+	<stdio.h>
+	<math.h>
+	<limits.h>
+

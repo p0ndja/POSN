@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1538891579 source:c:\users\admin\desktop\posn\water\main.c
+	<stdio.h>
+	<stdlib.h>
+

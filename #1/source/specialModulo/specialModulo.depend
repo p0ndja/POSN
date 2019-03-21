@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1539162706 source:c:\users\admin\desktop\posn\specialmodulo\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string.h>
+

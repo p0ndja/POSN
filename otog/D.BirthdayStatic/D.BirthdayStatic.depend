@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1552275355 source:d:\posn\otog\d.birthdaystatic\main.cpp
+	<iostream>
+	<string.h>
+	<stdio.h>
+

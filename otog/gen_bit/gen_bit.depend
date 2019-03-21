@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1552114326 source:d:\posn\otog\gen_bit\main.c
+	<stdio.h>
+	<stdlib.h>
+

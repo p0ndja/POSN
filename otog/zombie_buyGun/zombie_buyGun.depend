@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1552220416 source:d:\posn\otog\zombie_buygun\main.c
+	<stdio.h>
+	<stdlib.h>
+

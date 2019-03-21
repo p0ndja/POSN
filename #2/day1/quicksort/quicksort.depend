@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1552116673 source:d:\posn\otog\quicksort\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+

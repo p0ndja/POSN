@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1538805160 source:c:\users\admin\desktop\posn\winter\main.c
+	<stdio.h>
+	<stdlib.h>
+

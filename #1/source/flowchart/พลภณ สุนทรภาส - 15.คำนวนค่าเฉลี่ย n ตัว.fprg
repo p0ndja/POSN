@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="NBP"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2561-10-03 03:04:23 PM"/>
+        <attribute name="created" value="TkJQO05CUC0yMDsyNTYxLTEwLTAzOzAxOjUwOjQwIFBNOzE4NjM="/>
+        <attribute name="edited" value="TkJQO05CUC0yMDsyNTYxLTEwLTAzOzAzOjA0OjIzIFBNOzcxOzIwMjg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sum, number, count, average, countP" type="Real" array="False" size=""/>
+            <assign variable="count" expression="0"/>
+            <assign variable="sum" expression="0"/>
+            <assign variable="number" expression="0"/>
+            <output expression="&quot;&#3585;&#3619;&#3640;&#3603;&#3634;&#3651;&#3626;&#3656;&#3592;&#3635;&#3609;&#3623;&#3609;&#3607;&#3637;&#3656; 1&quot;" newline="True"/>
+            <while expression="number != -1">
+                <input variable="number"/>
+                <if expression="number != -1">
+                    <then>
+                        <assign variable="sum" expression="sum + number"/>
+                        <assign variable="count" expression="count + 1"/>
+                        <assign variable="countP" expression="count + 1"/>
+                        <output expression="&quot;&#3585;&#3619;&#3640;&#3603;&#3634;&#3651;&#3626;&#3656;&#3592;&#3635;&#3609;&#3623;&#3609;&#3607;&#3637;&#3656; &quot; &amp; countP" newline="True"/>
+                        <output expression="&quot;&#3627;&#3634;&#3585;&#3588;&#3640;&#3603;&#3605;&#3657;&#3629;&#3591;&#3585;&#3634;&#3619;&#3592;&#3632;&#3627;&#3618;&#3640;&#3604; &#3585;&#3619;&#3640;&#3603;&#3634;&#3651;&#3626;&#3656;&#3648;&#3621;&#3586; -1&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <comment text="&#3612;&#3641;&#3657;&#3651;&#3594;&#3657;&#3651;&#3626;&#3656;&#3648;&#3621;&#3586; -1&#13;&#10;&#3606;&#3639;&#3629;&#3623;&#3656;&#3634;&#3651;&#3627;&#3657;&#3627;&#3618;&#3640;&#3604;&#3619;&#3633;&#3610;&#3588;&#3656;&#3634;&#3648;&#3614;&#3636;&#3656;&#3617;"/>
+                    </else>
+                </if>
+            </while>
+            <assign variable="average" expression="sum / count"/>
+            <output expression="&quot;&#3588;&#3640;&#3603;&#3651;&#3626;&#3656;&#3592;&#3635;&#3609;&#3623;&#3609;&#3617;&#3634;&#3607;&#3633;&#3657;&#3591;&#3626;&#3636;&#3657;&#3609; &quot; &amp; count &amp; &quot; &#3592;&#3635;&#3609;&#3623;&#3609;&quot;" newline="True"/>
+            <output expression="&quot;&#3588;&#3656;&#3634;&#3648;&#3593;&#3621;&#3637;&#3656;&#3618;&#3586;&#3629;&#3591;&#3592;&#3635;&#3609;&#3623;&#3609;&#3607;&#3633;&#3657;&#3591;&#3627;&#3617;&#3604;&#3652;&#3604;&#3657;&#3649;&#3585;&#3656; &quot; &amp; average" newline="True"/>
+            <output expression="&quot;Coded by &#3614;&#3621;&#3616;&#3603; &#3626;&#3640;&#3609;&#3607;&#3619;&#3616;&#3634;&#3626;&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
